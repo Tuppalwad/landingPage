@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;400&family=Lora&display=swap");
 * {
   margin: 0;
@@ -8,7 +9,7 @@
   font-size: 1.5rem;
   font-weight: bold;
   color: black;
-  font-family: "Inter", sans-serif;
+  font-family: "league spartan";
   color: #fff !important;
 }
 .navbar-brand:hover {
@@ -19,9 +20,9 @@
   margin-left: 10px;
   color: black;
   text-transform: uppercase;
-  font-family: "Inter", sans-serif;
+  font-family: "league spartan";
 
-  font-family: "Lora", serif;
+  font-family: "league spartan";
 }
 .nav-link:hover {
   background-color: rgb(245, 66, 66);
@@ -33,9 +34,8 @@
 li {
   list-style: none;
 }
-.main {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
-    url("../Assets/images/Bg.webp");
+.mains {
+  background-image: url("../Assets/images/Landing_Page.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -44,14 +44,11 @@ li {
 }
 .main h1 {
   width: 100%;
-  display: flex; /* margin-left: 100px; */
+  display: flex;
   font-size: 2rem;
   font-weight: 700;
   color: white;
-  font-family: "Inter", sans-serif;
-  font-family: "Lato", sans-serif;
-  font-family: "Lobster", cursive;
-  font-family: "Lora", serif;
+  font-family: "league spartan";
   align-items: center;
   align-items: center;
   justify-content: center;
@@ -72,6 +69,9 @@ li {
 .btns:hover {
   background-color: rgb(50, 132, 225);
 }
+a {
+  text-decoration: none;
+}
 .nav_itemss {
   display: flex;
   align-items: center;
@@ -85,6 +85,141 @@ li {
 .inphone {
   color: #fff;
 }
+
+/* constct style start  */
+
+.max-width {
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+
+.about,
+.Project,
+.skills,
+.teams,
+.contact,
+footer {
+  font-family: "league spartan";
+}
+
+.about .about-content,
+.Project .serv-content,
+.skills .skills-content,
+.contact .contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+section .title {
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  font-family: "league spartan";
+}
+
+section .title::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background: #111;
+  transform: translateX(-50%);
+}
+
+section .title::after {
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  font-size: 20px;
+  color: crimson;
+  padding: 0 5px;
+  background: #fff;
+  transform: translateX(-50%);
+}
+
+/* style for teams  */
+
+.img_team {
+  width: 10%;
+  height: 10%;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.names-team {
+  color: #fff;
+}
+
+.titles {
+  color: #fff;
+}
+.carousel-inner {
+  width: 100% !important;
+  height: 300px;
+}
+.carousel-inner {
+  width: 100%;
+  height: 300px;
+  background-image: url("../Assets/images/about_bg.webp");
+}
+
+/* footer style is start  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+.btn-floating .icons_fooder:hover {
+  color: #0d255b;
+}
+
+.footer_email {
+  margin-bottom: 6px;
+  width: 200px;
+  padding: 4px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+}
+
+@media screen and (max-width: 780px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer_email {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 302px) {
+  .myfooter {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer_email {
+    margin-bottom: 10px;
+  }
+}
+
+/* footer style is end  */
+
 @media screen and (max-width: 768px) {
   .main h1 {
     font-size: 1.5rem;
@@ -116,5 +251,31 @@ li {
   }
   .btns {
     margin-left: 0;
+  }
+
+  .about .about-content .right .text,
+  .skills .skills-content .left .text {
+    font-size: 19px;
+  }
+
+  .contact .right form .fields {
+    flex-direction: column;
+  }
+
+  .contact .right form .name,
+  .contact .right form .email {
+    margin: 0;
+  }
+
+  .right form .error-box {
+    width: 150px;
+  }
+  .img_team {
+    width: 20%;
+    height: 20%;
+  }
+  .carousel-inner {
+    width: 100% !important;
+    height: 200px;
   }
 }
