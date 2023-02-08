@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import IMGS from "../Assets/images/vision.png";
 import Imgss from "../Assets/images/smallleaf.webp";
 import "../style/home.css";
+
+
 function Home() {
   const commentsection = useRef(null);
   const gotocommentsection = () => {
@@ -181,7 +183,7 @@ function Home() {
           </div>
           <div className="row">
             <div className="col-md-12  ">
-              <p className=" text-center">
+              <p className=" text-center" style={{fontFamily: "league spartan",textAlign: 'justify' ,fontSize:17.5}}>
                 Unico foods innovation will not only promote healthy food choice
                 but it will also help Indian farmers in diversifying their crop
                 practices which will boost their income. We @ Unico foods
@@ -211,7 +213,7 @@ function Home() {
             <div className="col-6">
               <img src="" alt="" />
             </div>
-            <div className="col-lg-6 my-4">
+            <div className="col-lg-6 my-4" style={{fontFamily: "league spartan",textAlign: 'justify',fontSize:17.5}}>
               Millet, a highly nutritious grain, is packed with antioxidants,
               protein, and fiber, making it the perfect base for a healthy
               breakfast. Whether you're looking for a hearty bowl of hot cereal,
@@ -224,7 +226,7 @@ function Home() {
               naturally gluten free. Their production requires less water and
               low maintenance and are also resilient to drought. As the climate
               change and water scarcity problems are arising all across the
-              globe, UNICO FOODS sole focus is to promote millet based products
+              globe,<b>UNICO FOODS</b>  sole focus is to promote millet based products
               as a healthy and nutritious food choice to all. We have always
               believed in mindful eating of pure and natural products which
               balances the diet
@@ -314,7 +316,7 @@ function Home() {
                         <button
                           type="submit"
                           className="btn btn-danger my-3"
-                          style={{ marginLeft: "-25px" }}
+                          style={{ marginLeft: "-24px" }}
                         >
                           Submit
                         </button>
@@ -349,7 +351,7 @@ function Home() {
                         UNICO FOODS
                       </Link>
                     </h6>
-                    <p style={{ color: "#fff" }}>
+                    <p style={{ color: "#fff",textAlign: 'justify'  }}>
                       Welcome to the world of wholesome and nutritious
                       breakfasts! At UNICO FOODS, we believe that the key to a
                       great day starts with a nutritious and delicious
