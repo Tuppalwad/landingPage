@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/iframe-has-title */
 import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import IMGS from "../Assets/images/vision.png";
@@ -5,7 +6,8 @@ import Imgss from "../Assets/images/smallleaf.webp";
 import "../style/home.css";
 import IMG2 from "../Assets/images/bg11.PNG";
 import IMG1 from "../Assets/images/bg111.png";
-
+import FImg from "../Assets/images/millets.png";
+// import FImg1 from "../Assets/images/ffff.png";
 function Home() {
   const commentsection = useRef(null);
   const gotocommentsection = () => {
@@ -114,6 +116,7 @@ function Home() {
                     className="nav-link icon_navbar topIcon"
                     href="https://www.facebook.com/people/UNICO-FOODS/100087934491728/?mibextid=LQQJ4d"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <i className="fa-brands   fa-facebook  nav_itemss"> </i>
                   </a>
@@ -123,6 +126,7 @@ function Home() {
                     className="nav-link icon_navbar topIcon"
                     href="https://www.instagram.com/invites/contact/?i=1wy4i12zjvrfa&utm_content=psi6h2r"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <i className="fa-brands  fa-instagram   nav_itemss"></i>
                   </a>
@@ -133,6 +137,7 @@ function Home() {
                     className="nav-link icon_navbar topIcon"
                     href="https://www.linkedin.com/company/unico-foods/?viewAsMember=true"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <i className="fa-brands  fa-linkedin nav_itemss"></i>
                   </a>
@@ -142,6 +147,7 @@ function Home() {
                     className="nav-link icon_navbar topIcon"
                     href="https://twitter.com/unico_foods"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <i className="fa-brands  fa-twitter nav_itemss"></i>
                   </a>
@@ -151,6 +157,7 @@ function Home() {
                     className="nav-link icon_navbar topIcon"
                     href="https://api.whatsapp.com/send?phone=919900001845&text=Hey%20BlissClub"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <i
                       class="fab  topIcons fa-whatsapp   "
@@ -158,19 +165,6 @@ function Home() {
                     ></i>
                   </a>
                 </li>
-                {/* <li className="nav-item">
-                  <a
-                    className="nav-link icon_navbar"
-                    href="https://api.whatsapp.com/send?phone=919900001845&text=Hey%20BlissClub"
-                    class="btn-whatsapp-pulse"
-                    target="_blank"
-                  >
-                    <i
-                      class="fab fa-whatsapp "
-                      style={{ color: "white", fontSize: "20px" }}
-                    ></i>
-                  </a>
-                </li> */}
               </div>
             </div>
           </div>
@@ -240,17 +234,22 @@ function Home() {
         </div>
       </section>
 
-      <section className="about my-4">
+      <section className="about my-4 ">
         <div className="container-fluid text-center">
           <h1>About Millet</h1>
-          <img src={Imgss} className="mx-auto img_about" alt="" />
+          <img src={Imgss} className="mx-auto img_about p-2" alt="" />
         </div>
-        <div className="container">
-          <div className="row">
-            <div className="col-6">
-              <img src="" alt="" />
+        <div className="container ">
+          <div className="row ">
+            <div className="col-6 ">
+              <img
+                src={FImg}
+                class="d-block w-100 bg-black"
+                style={{ marginTop: "-50px" }}
+                alt="..."
+              />
             </div>
-            <div className="col-lg-6 my-2">
+            <div className="col-lg-6 my-5 " style={{ marginTop: "100px" }}>
               Millet, a highly nutritious grain, is packed with antioxidants,
               protein, and fiber, making it the perfect base for a healthy
               breakfast. Whether you're looking for a hearty bowl of hot cereal,
@@ -271,7 +270,74 @@ function Home() {
           </div>
         </div>
       </section>
+      {/* 
+      <section className="product my-5">
+        <div className="container text-center">
+          <h1>Our Products</h1>
+        </div>
 
+        <div className="container">
+          <div className="row">
+            <div
+              id="carouselExampleControls"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner " style={{ height: "600px" }}>
+                <div class="carousel-item active">
+                  <img
+                    src={FImg1}
+                    class="d-block w-100"
+                    style={{ width: "200px", height: "400px" }}
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src={FImg1}
+                    class="d-block w-100"
+                    style={{ width: "200px", height: "400px" }}
+                    alt="..."
+                  />
+                </div>
+
+                <div class="carousel-item">
+                  <img
+                    src={FImg1}
+                    class="d-block w-100"
+                    style={{ width: "200px", height: "400px" }}
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section> */}
       <section className="contact my-5">
         <div className="container my-3 text-center">
           <h1 className="" ref={scontactsection}>
@@ -436,19 +502,29 @@ function Home() {
                     Useful links
                   </h6>
                   <p>
-                    <a className="text-white">Your Account</a>
+                    <a className="text-white" href="/">
+                      Your Account
+                    </a>
                   </p>
                   <p>
-                    <a className="text-white">Become an Affiliate</a>
+                    <a className="text-white" href="/">
+                      Become an Affiliate
+                    </a>
                   </p>
                   <p>
-                    <a className="text-white">Shipping Rates</a>
+                    <a className="text-white" href="/">
+                      Shipping Rates
+                    </a>
                   </p>
                   <p>
-                    <a className="text-white">Help</a>
+                    <a className="text-white" href="/">
+                      Help
+                    </a>
                   </p>
                   <p>
-                    <a className="text-white">Become our investres</a>
+                    <a className="text-white" href="/">
+                      Become our investres
+                    </a>
                   </p>
                 </div>
 
@@ -490,6 +566,7 @@ function Home() {
                       className="nav-link "
                       href="https://www.facebook.com/people/UNICO-FOODS/100087934491728/?mibextid=LQQJ4d"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <i className="fa-brands fa-facebook  nav_itemss"> </i>
                     </a>
@@ -499,6 +576,7 @@ function Home() {
                       className="nav-link "
                       href="https://www.instagram.com/invites/contact/?i=1wy4i12zjvrfa&utm_content=psi6h2r"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <i className="fa-brands fa-instagram   nav_itemss"></i>
                     </a>
@@ -509,6 +587,7 @@ function Home() {
                       className="nav-link "
                       href="https://www.linkedin.com/company/unico-foods/?viewAsMember=true"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <i className="fa-brands fa-linkedin nav_itemss"></i>
                     </a>
@@ -518,6 +597,7 @@ function Home() {
                       className="nav-link "
                       href="https://twitter.com/unico_foods"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <i className="fa-brands fa-twitter nav_itemss"></i>
                     </a>
@@ -525,10 +605,11 @@ function Home() {
 
                   <li className="nav-item">
                     <a
-                      className="nav-link icon_navbar"
+                      className="nav-link "
                       href="https://api.whatsapp.com/send?phone=919900001845&text=Hey%20BlissClub"
                       class="btn-whatsapp-pulse"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <i
                         class="fab fa-whatsapp "
