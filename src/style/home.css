@@ -99,6 +99,14 @@ a {
 .topIcons:hover {
   color: red !important;
 }
+
+.text-about {
+  margin-top: 40px;
+}
+
+.about_image {
+  margin-top: -80px;
+}
 .max-width {
   max-width: 1300px;
   padding: 0 80px;
@@ -219,6 +227,13 @@ a {
   }
   .hompage {
     height: 500px !important;
+  }
+  .text-about {
+    margin-top: 0px;
+  }
+
+  .about_image {
+    margin-top: 0;
   }
 }
 

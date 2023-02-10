@@ -6,7 +6,7 @@ import Imgss from "../Assets/images/smallleaf.webp";
 import "../style/home.css";
 import IMG2 from "../Assets/images/bg11.PNG";
 import IMG1 from "../Assets/images/bg111.png";
-import FImg from "../Assets/images/millets.png";
+import FImg from "../Assets/images/png.png";
 // import FImg1 from "../Assets/images/ffff.png";
 function Home() {
   const commentsection = useRef(null);
@@ -241,15 +241,10 @@ function Home() {
         </div>
         <div className="container ">
           <div className="row ">
-            <div className="col-6 ">
-              <img
-                src={FImg}
-                class="d-block w-100 bg-black"
-                style={{ marginTop: "-50px" }}
-                alt="..."
-              />
+            <div className="col-lg-6 ">
+              <img src={FImg} class="d-block w-100 about_image" alt="..." />
             </div>
-            <div className="col-lg-6 my-5 " style={{ marginTop: "100px" }}>
+            <div className="col-lg-6 text-about ">
               Millet, a highly nutritious grain, is packed with antioxidants,
               protein, and fiber, making it the perfect base for a healthy
               breakfast. Whether you're looking for a hearty bowl of hot cereal,
@@ -265,7 +260,7 @@ function Home() {
               globe, UNICO FOODS sole focus is to promote millet based products
               as a healthy and nutritious food choice to all. We have always
               believed in mindful eating of pure and natural products which
-              balances the diet
+              balances the diet.
             </div>
           </div>
         </div>
