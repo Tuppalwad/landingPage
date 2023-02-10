@@ -351,7 +351,7 @@ function Home() {
               ></iframe>
             </div>
             <div className="col-lg-5   ">
-              <form action="https://formspree.io/f/moqzejpl" method="post">
+              <form action="https://formspree.io/f/myyaejqk" method="post">
                 <div className="form-group my-2">
                   <div className="row">
                     <h5>Message Us</h5>
