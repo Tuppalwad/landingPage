@@ -214,7 +214,7 @@ function Home() {
           </div>
           <div className="row">
             <div className="col-md-12  ">
-              <p className=" text-center">
+              <p className=" text-center" style={{ textAlign: "justify" }}>
                 Unico foods innovation will not only promote healthy food choice
                 but it will also help Indian farmers in diversifying their crop
                 practices which will boost their income. We @ Unico foods
@@ -244,7 +244,10 @@ function Home() {
             <div className="col-lg-6 ">
               <img src={FImg} class="d-block w-100 about_image" alt="..." />
             </div>
-            <div className="col-lg-6 text-about ">
+            <div
+              className="col-lg-6 text-about "
+              style={{ textAlign: "justify" }}
+            >
               Millet, a highly nutritious grain, is packed with antioxidants,
               protein, and fiber, making it the perfect base for a healthy
               breakfast. Whether you're looking for a hearty bowl of hot cereal,
@@ -265,74 +268,7 @@ function Home() {
           </div>
         </div>
       </section>
-      {/* 
-      <section className="product my-5">
-        <div className="container text-center">
-          <h1>Our Products</h1>
-        </div>
 
-        <div className="container">
-          <div className="row">
-            <div
-              id="carouselExampleControls"
-              class="carousel slide"
-              data-bs-ride="carousel"
-            >
-              <div class="carousel-inner " style={{ height: "600px" }}>
-                <div class="carousel-item active">
-                  <img
-                    src={FImg1}
-                    class="d-block w-100"
-                    style={{ width: "200px", height: "400px" }}
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src={FImg1}
-                    class="d-block w-100"
-                    style={{ width: "200px", height: "400px" }}
-                    alt="..."
-                  />
-                </div>
-
-                <div class="carousel-item">
-                  <img
-                    src={FImg1}
-                    class="d-block w-100"
-                    style={{ width: "200px", height: "400px" }}
-                    alt="..."
-                  />
-                </div>
-              </div>
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselExampleControls"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselExampleControls"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </section> */}
       <section className="contact my-5">
         <div className="container my-3 text-center">
           <h1 className="" ref={scontactsection}>
@@ -448,7 +384,7 @@ function Home() {
                       UNICO FOODS
                     </Link>
                   </h6>
-                  <p style={{ color: "#fff" }}>
+                  <p style={{ color: "#fff", textAlign: "justify" }}>
                     Welcome to the world of wholesome and nutritious breakfasts!
                     At UNICO FOODS, we believe that the key to a great day
                     starts with a nutritious and delicious breakfast. That's why
@@ -601,7 +537,7 @@ function Home() {
                   <li className="nav-item">
                     <a
                       className="nav-link "
-                      href="https://api.whatsapp.com/send?phone=919900001845&text=Hey%20BlissClub"
+                      href="https://api.whatsapp.com/send?phone=919669559988&text=Hello"
                       class="btn-whatsapp-pulse"
                       target="_blank"
                       rel="noreferrer"
