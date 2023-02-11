@@ -155,7 +155,7 @@ function Home() {
                 <li className="nav-item">
                   <a
                     className="nav-link icon_navbar topIcon"
-                    href="https://api.whatsapp.com/send?phone=919900001845&text=Hey%20BlissClub"
+                    href="https://api.whatsapp.com/send?phone=919669559988&text=Hello"
                     target="_blank"
                     rel="noreferrer"
                   >
